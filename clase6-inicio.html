@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <style>
+        :root{
+            --white: #FFFFFF;
+            --black: #000000;
+            --very-light-pink: #C7C7C7;
+            --text-input-field: #F7F7F7;
+            --hospital-green: #ACD9B2; 
+            --sm: 14px;
+            --md: 16px;
+            --lg: 18px;
+        }
+
+        body{
+            font-family: 'Quicksand', sans-serif;
+            margin: 0;
+        }
+
+        .cards-container{
+            margin: 10px 0px 10px 0px;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, 240px); /*repeat(cantidad de columnas, tamaño de columnas) por ejemplo repeat(2, 1fr)*/
+            gap: 26px; /*En el caso de CSS Grid, esta propiedad nos ayuda a definir la distancia entre las columnas y filas de la cuadrícula.*/
+            place-content: center;
+        }
+
+        .product-card{
+            width: 240px;
+        }
+
+        .product-card img{
+            width: 240px;
+            height: 240px;
+            border-radius: 20px;
+            object-fit: cover; /*object-fit: cover; toma el tamaño de la imagen tal cual, independientemente de su width y height (se adecua al tamaño sin estirarse o contraerse)*/
+        }
+
+        .product-info{
+            margin-top: 12px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .product-info figure{
+            margin: 0;
+        }
+
+        .product-info figure img{
+            width: 35px;
+            height: 35px;
+        }
+
+        .product-info div p:nth-child(1){
+            font-weight: bold;
+            font-size: var(--md);
+            margin-top: 0;
+            margin-bottom: 4px;
+            }
+
+        .product-info div p:nth-child(2){
+            font-size: var(--sm);
+            margin-top: 0;
+            margin-bottom: 0;
+            color: var(--very-light-pink);
+        }
+
+        @media (max-width: 640px){
+            .cards-container{
+                grid-template-columns: repeat(auto-fill, 140px); /*repeat(cantidad de columnas, tamaño de columnas) por ejemplo repeat(2, 1fr)*/
+            }
+
+            .product-card{
+                width: 140px;
+            }
+
+            .product-card img{
+                width: 140px;
+                height: 140px;
+            }
+
+        }
+    </style>
+</head>
+<body>
+    <section class="main-container">
+        <div class="cards-container">
+            
+            <div class="product-card">
+                <img src="https://images.pexels.com/photos/12339571/pexels-photo-12339571.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="">
+                <div class="product-info">
+                    <div>
+                        <p>$500,00</p>
+                        <p>Xbox Series S</p>
+                    </div>
+                    <figure>
+                        <img src="./Icons/bt_add_to_cart.svg" alt="">
+                    </figure>
+                </div>  
+            </div>
+
+            <div class="product-card">
+                <img src="https://images.pexels.com/photos/12339571/pexels-photo-12339571.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="">
+                <div class="product-info">
+                    <div>
+                        <p>$500,00</p>
+                        <p>Xbox Series S</p>
+                    </div>
+                    <figure>
+                        <img src="./Icons/bt_add_to_cart.svg" alt="">
+                    </figure>
+                </div>  
+            </div>
+            
+            <div class="product-card">
+                <img src="https://images.pexels.com/photos/12339571/pexels-photo-12339571.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="">
+                <div class="product-info">
+                    <div>
+                        <p>$500,00</p>
+                        <p>Xbox Series S</p>
+                    </div>
+                    <figure>
+                        <img src="./Icons/bt_add_to_cart.svg" alt="">
+                    </figure>
+                </div>  
+            </div>
+
+            <div class="product-card">
+                <img src="https://images.pexels.com/photos/12339571/pexels-photo-12339571.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="">
+                <div class="product-info">
+                    <div>
+                        <p>$500,00</p>
+                        <p>Xbox Series S</p>
+                    </div>
+                    <figure>
+                        <img src="./Icons/bt_add_to_cart.svg" alt="">
+                    </figure>
+                </div>  
+            </div>
+            
+            <div class="product-card">
+                <img src="https://images.pexels.com/photos/12339571/pexels-photo-12339571.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="">
+                <div class="product-info">
+                    <div>
+                        <p>$500,00</p>
+                        <p>Xbox Series S</p>
+                    </div>
+                    <figure>
+                        <img src="./Icons/bt_add_to_cart.svg" alt="">
+                    </figure>
+                </div>  
+            </div>
+            
+            <div class="product-card">
+                <img src="https://images.pexels.com/photos/12339571/pexels-photo-12339571.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="">
+                <div class="product-info">
+                    <div>
+                        <p>$500,00</p>
+                        <p>Xbox Series S</p>
+                    </div>
+                    <figure>
+                        <img src="./Icons/bt_add_to_cart.svg" alt="">
+                    </figure>
+                </div>  
+            </div>
+            
+            <div class="product-card">
+                <img src="https://images.pexels.com/photos/12339571/pexels-photo-12339571.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="">
+                <div class="product-info">
+                    <div>
+                        <p>$500,00</p>
+                        <p>Xbox Series S</p>
+                    </div>
+                    <figure>
+                        <img src="./Icons/bt_add_to_cart.svg" alt="">
+                    </figure>
+                </div>  
+            </div>
+            
+            <div class="product-card">
+                <img src="https://images.pexels.com/photos/12339571/pexels-photo-12339571.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="">
+                <div class="product-info">
+                    <div>
+                        <p>$500,00</p>
+                        <p>Xbox Series S</p>
+                    </div>
+                    <figure>
+                        <img src="./Icons/bt_add_to_cart.svg" alt="">
+                    </figure>
+                </div>  
+            </div>
+            
+            <div class="product-card">
+                <img src="https://images.pexels.com/photos/12339571/pexels-photo-12339571.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="">
+                <div class="product-info">
+                    <div>
+                        <p>$500,00</p>
+                        <p>Xbox Series S</p>
+                    </div>
+                    <figure>
+                        <img src="./Icons/bt_add_to_cart.svg" alt="">
+                    </figure>
+                </div>  
+            </div>
+            
+            <div class="product-card">
+                <img src="https://images.pexels.com/photos/12339571/pexels-photo-12339571.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="">
+                <div class="product-info">
+                    <div>
+                        <p>$500,00</p>
+                        <p>Xbox Series S</p>
+                    </div>
+                    <figure>
+                        <img src="./Icons/bt_add_to_cart.svg" alt="">
+                    </figure>
+                </div>  
+            </div>
+            
+            <div class="product-card">
+                <img src="https://images.pexels.com/photos/12339571/pexels-photo-12339571.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="">
+                <div class="product-info">
+                    <div>
+                        <p>$500,00</p>
+                        <p>Xbox Series S</p>
+                    </div>
+                    <figure>
+                        <img src="./Icons/bt_add_to_cart.svg" alt="">
+                    </figure>
+                </div>  
+            </div>
+            
+            <div class="product-card">
+                <img src="https://images.pexels.com/photos/12339571/pexels-photo-12339571.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="">
+                <div class="product-info">
+                    <div>
+                        <p>$500,00</p>
+                        <p>Xbox Series S</p>
+                    </div>
+                    <figure>
+                        <img src="./Icons/bt_add_to_cart.svg" alt="">
+                    </figure>
+                </div>  
+            </div>
+            
+            <div class="product-card">
+                <img src="https://images.pexels.com/photos/12339571/pexels-photo-12339571.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="">
+                <div class="product-info">
+                    <div>
+                        <p>$500,00</p>
+                        <p>Xbox Series S</p>
+                    </div>
+                    <figure>
+                        <img src="./Icons/bt_add_to_cart.svg" alt="">
+                    </figure>
+                </div>  
+            </div>
+            
+            <div class="product-card">
+                <img src="https://images.pexels.com/photos/12339571/pexels-photo-12339571.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="">
+                <div class="product-info">
+                    <div>
+                        <p>$500,00</p>
+                        <p>Xbox Series S</p>
+                    </div>
+                    <figure>
+                        <img src="./Icons/bt_add_to_cart.svg" alt="">
+                    </figure>
+                </div>  
+            </div>
+            
+            <div class="product-card">
+                <img src="https://images.pexels.com/photos/12339571/pexels-photo-12339571.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="">
+                <div class="product-info">
+                    <div>
+                        <p>$500,00</p>
+                        <p>Xbox Series S</p>
+                    </div>
+                    <figure>
+                        <img src="./Icons/bt_add_to_cart.svg" alt="">
+                    </figure>
+                </div>  
+            </div>
+
+
+            
+        </div>
+    </section>
+</body>
+</html>
